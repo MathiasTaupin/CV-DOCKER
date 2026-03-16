@@ -1,0 +1,8 @@
+services:
+  mon-cv:
+    image: nginx:alpine
+    container_name: cv_mathias
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html
