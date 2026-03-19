@@ -16,8 +16,9 @@ un_site_internet/
 ├── assets/                 (Ressources - images, médias, etc.)
 ├── projects/               (Dossier contenant tous mes projets)
 │   ├── 01-faux-virus/      (Simulation de virus éducative)
-│   ├── 02-projet-web/      (Portfolio d'agence créative)
-│   └── 03-app-progressive/ (Application web progressive)
+│   ├── 02-station-meteo/   (Application météo web)
+│   ├── 03-projet-web/      (Portfolio d'agence créative)
+│   └── 04-app-progressive/ (Application web progressive)
 └── README.md              (Ce fichier)
 ```
 
@@ -41,10 +42,13 @@ un_site_internet/
 ### 1. Faux Virus
 Un projet éducatif de simulation de virus informatique pour sensibiliser aux risques du téléchargement inconnu.
 
-### 2. Projet Web
+### 2. Station Météo
+Projet de station météo Arduino utilisant une thermistance pour mesurer la température et un ventilateur de refroidissement automatique.
+
+### 3. Projet Web
 Portfolio d'agence créative présentant nos services et réalisations.
 
-### 3. Application Progressive
+### 4. Application Progressive
 Une application web progressive (PWA) avec fonctionnalités modernes.
 
 ## Contact

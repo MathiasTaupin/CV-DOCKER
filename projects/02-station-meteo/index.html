@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Météo - Application Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌤️ Station Météo</div>
+            <a href="../../index.html" class="back-link">← Retour au Portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <h1>Station Météo Arduino</h1>
+            <p>Un projet de station météo développée avec Arduino et thermistance</p>
+        </section>
+
+        <section class="project-info">
+            <div class="info-container">
+                <h2>À propos du Projet</h2>
+                <p>Ce projet consiste en une station météo réalisée avec une carte Arduino. Elle mesure la température à l'aide d'une thermistance en pont diviseur et commande un ventilateur de refroidissement selon le seuil détecté, avec affichage des informations sur un écran LCD.</p>
+
+                <h3>Caractéristiques</h3>
+                <ul>
+                    <li>Mesure de température via thermistance NTC</li>
+                    <li>Commande de ventilateur configurable</li>
+                    <li>Affichage sur écran LCD I2C</li>
+                    <li>Transmission des données via port série</li>
+
+                <h3>Matériel Nécessaire</h3>
+                <ul>
+                    <li>Carte Arduino Uno</li>
+                    <li>Thermistance NTC 10k en pont diviseur</li>
+                    <li>Écran LCD I2C 16x2</li>
+                    <li>Ventilateur 5V + transistor (ou module MOSFET)
+                    <li>Câbles et breadboard</li>
+                </ul>
+
+                <h3>Technologie Utilisée</h3>
+                <ul>
+                    <li>Arduino IDE</li>
+                    <li>C/C++ pour Arduino</li>
+                    <li>Bibliothèques LiquidCrystal_I2C</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="download-section">
+            <div class="info-container">
+                <h2>Télécharger le Code Arduino</h2>
+                <p>Téléchargez le fichier source Arduino de la station météo :</p>
+                <a href="assets/station_meteo.ino" download="station_meteo.ino" class="download-btn">
+                    📥 Télécharger station_meteo.ino
+                </a>
+                <p class="download-info"><small>💾 Fichier Arduino | 📄 ~1 KB | Compatible Arduino IDE</small></p>
+            </div>
+        </section>
+
+        <section class="project-image">
+            <div class="info-container" style="text-align:center; margin-bottom:2rem;">
+                <img src="assets/station_meteo.jpg" alt="Station météo Arduino" style="max-width:100%; height:auto; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.2);">
+                <p style="color:#555; margin-top:0.8rem;">Photo de la station météo Arduino (thermistance + ventilateur).</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mathias TAUPIN - Tous droits réservés</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
