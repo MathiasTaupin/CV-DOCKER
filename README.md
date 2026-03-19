@@ -25,7 +25,7 @@ un_site_internet/
 
 ✨ **Design Responsive** - Fonctionne parfaitement sur tous les appareils (mobile, tablette, desktop)  
 🎨 **Interface Moderne** - Design contemporain avec gradients et animations  
-⚡ **Performance Optimisée** - Sites légers et rapides au chargement  
+⚡ **Performance Optimisée** - Sites légers et rapides à charger  
 💻 **Projets Organisés** - Chaque projet dans son propre dossier avec structure complète  
 
 ## Mes Compétences
