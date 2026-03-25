@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - Mathias TAUPIN</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
@@ -30,125 +30,186 @@
     <!-- About Content -->
     <section class="about-details">
         <div class="about-container">
-            <div class="about-grid">
-                <div class="about-card">
-                    <button class="category-button" onclick="toggleCategory('formation'); event.preventDefault(); event.stopPropagation();">
-                        <span class="category-icon">🎓</span>
-                        <span class="category-title">Formation</span>
-                        <span class="arrow">▼</span>
-                    </button>
-                    <div id="formation" class="category-content">
-                        <h3>Mon parcours académique</h3>
-                        <ul>
-                            <li><strong>Apprentissage Développeur Web</strong> - En cours</li>
-                            <li><strong>Baccalauréat </strong> - En cours</li>
-                            <li><strong>Brevet des Collèges</strong> - Obtenu en 2022</li>
-                            <li><strong>Autodidacte</strong> - Apprentissage continu des technologies</li>
-                        </ul>
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-button active" onclick="switchTab('formation')">🎓 Formation</button>
+                    <button class="tab-button" onclick="switchTab('competences')">💻 Compétences</button>
+                    <button class="tab-button" onclick="switchTab('experience')">💼 Expérience</button>
+                    <button class="tab-button" onclick="switchTab('interets')">🎯 Centres d'intérêt</button>
+                </div>
+
+            <div class="tabs-content">
+                <div class="tab-content active" id="formation">
+                    <h3>Mon parcours académique</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h4>🎯 Brevet des Collèges</h4>
+                                <p>Obtenu avec mention. Premier diplôme, avant le passage au lycée avec des bases solides en général.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022 - 2024</div>
+                            <div class="timeline-content">
+                                <h4>📚 Lycée général</h4>
+                                <p>Suivi de cours généralistes en première et terminale générale avant la transition vers STI2D.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025 - Présent</div>
+                            <div class="timeline-content">
+                                <h4>⚙️ Terminal STI2D</h4>
+                                <p>Formation spécialisée en Sciences et Technologies de l'Industrie et du Développement Durable.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Février 2026</div>
+                            <div class="timeline-content">
+                                <h4>🚗 Permis de Conduire</h4>
+                                <p>Obtention du permis de conduire automobile (classe B et B1).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">En cours</div>
+                            <div class="timeline-content">
+                                <h4>💻 Apprentissage Développeur Web</h4>
+                                <p>Formation en alternance pour maîtriser les technologies web modernes et les bonnes pratiques.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Continu</div>
+                            <div class="timeline-content">
+                                <h4>🚀 Autodidacte</h4>
+                                <p>Apprentissage autonome constant des nouvelles technologies et tendances du secteur informatique.</p>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
 
-                <div class="about-card">
-                    <button class="category-button" onclick="toggleCategory('competences'); event.preventDefault(); event.stopPropagation();">
-                        <span class="category-icon">💻</span>
-                        <span class="category-title">Compétences</span>
-                        <span class="arrow">▼</span>
-                    </button>
-                    <div id="competences" class="category-content">
-                        <h3>Technologies maîtrisées</h3>
+                <div class="tab-content" id="competences">
+                    <h3>Technologies maîtrisées</h3>
+
+                    <!-- Section Technologies Informatiques -->
+                    <div class="competence-section">
+                        <h4>💻 Technologies Informatiques</h4>
                         <div class="skills-grid">
                             <div class="skill-category">
-                                <h4>Frontend</h4>
+                                <h5>🌐 Développement Web</h5>
                                 <ul>
-                                    <li>HTML5 & CSS3</li>
-                                    <li>JavaScript (ES6+)</li>
+                                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+)</li>
+                                    <li><strong>Backend:</strong> Python, PHP (en cours), SQL (en cours)</li>
                                 </ul>
                             </div>
                             <div class="skill-category">
-                                <h4>Backend</h4>
+                                <h5>🛠️ Outils de Développement</h5>
                                 <ul>
-                                    <li>Python</li>
-                                    <li>PHP - en cours</li>
-                                    <li>SQL - en cours</li>
+                                    <li><strong>Versionnement :</strong> Git & GitHub</li>
+                                    <li><strong>Éditeur:</strong> VS Code</li>
+                                    <li><strong>Conteneurisation:</strong> Docker</li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Systèmes et Environnements -->
+                    <div class="competence-section">
+                        <h4>🔧 Systèmes et Environnements</h4>
+                        <div class="skills-grid">
                             <div class="skill-category">
-                                <h4>Outils</h4>
+                                <h5>💻 Systèmes d'Exploitation</h5>
                                 <ul>
-                                    <li>Git & GitHub</li>
-                                    <li>VS Code</li>
-                                    <li>Linux</li>
-                                    <li>Docker</li>
+                                    <li><strong>Principal:</strong> Windows</li>
+                                    <li><strong>Secondaire:</strong> Linux (Ubuntu, Debian)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Compétences Transversales -->
+                    <div class="competence-section">
+                        <h4>📈 Compétences Transversales</h4>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h5>🤝 Compétences Personnelles</h5>
+                                <ul>
+                                    <li>Résolution de problèmes</li>
+                                    <li>Travail en équipe</li>
+                                    <li>Apprentissage autonome</li>
+                                    <li>Communication technique</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="about-card">
-                    <button class="category-button" onclick="toggleCategory('experience'); event.preventDefault(); event.stopPropagation();">
-                        <span class="category-icon">💼</span>
-                        <span class="category-title">Expérience</span>
-                        <span class="arrow">▼</span>
-                    </button>
-                    <div id="experience" class="category-content">
-                        <h3>Mon expérience professionnelle</h3>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">2025 - Présent</div>
-                                <div class="timeline-content">
-                                    <h4>Terminal STI2D</h4>
-                                    <p>En cours de formation au lycée.</p>
-                                </div>
+                <div class="tab-content" id="experience">
+                    <h3>Mon expérience professionnelle</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020</div>
+                            <div class="timeline-content">
+                                <h4>🏭 Stage de découverte - SAS BOUTTE</h4>
+                                <p>Stage d'une semaine pour découvrir le monde professionnel et les métiers de l'industrie.</p>
                             </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date"> - 2025</div>
-                                <div class="timeline-content">
-                                    <h4>Lycée général</h4>
-                                    <p>Suivi de cours généraux, jusqu'à passage en STI2D, qui correspondais plus a mes centres d'intérêt.</p>
-                                </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h4>🏭 Stage de découverte - SAS BOUTTE</h4>
+                                <p>Deuxième stage de découverte d'une semaine pour approfondir mes connaissances du secteur industriel.</p>
                             </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-date">Sans arrêt</div>
-                                <div class="timeline-content">
-                                    <h4>Projets personnels</h4>
-                                    <p>Réalisation de plusieurs projets informatiques personnels pour développer mes compétences.</p>
-                                </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-content">
+                                <h4>📦 Travail d'été - SAS BOUTTE</h4>
+                                <p>Travail saisonnier d'une semaine en tant que manutentionnaire, permettant de développer le sens des responsabilités et le travail d'équipe.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025</div>
+                            <div class="timeline-content">
+                                <h4>🔧 Contrat temporaire - Lenne Création</h4>
+                                <p>Contrat de deux semaines pendant les vacances scolaires en tant qu'aide monteur, expérience enrichissante dans le domaine de la création et de l'assemblage.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="about-card">
-                    <button class="category-button" onclick="toggleCategory('interets'); event.preventDefault(); event.stopPropagation();">
-                        <span class="category-icon">🎯</span>
-                        <span class="category-title">Centres d'intérêt</span>
-                        <span class="arrow">▼</span>
-                    </button>
-                    <div id="interets" class="category-content">
-                        <h3>Ce qui me passionne</h3>
-                        <div class="interests-grid">
-                            <div class="interest-item">
-                                <span class="interest-icon">🚀</span>
-                                <h4>Innovation technologique</h4>
-                                <p>Suivre les dernières tendances et innovations dans le domaine du numérique.</p>
-                            </div>
-                            <div class="interest-item">
-                                <span class="interest-icon">📚</span>
-                                <h4>Apprentissage continu</h4>
-                                <p>Apprendre de nouvelles technologies et partager mes connaissances.</p>
-                            </div>
-                            <div class="interest-item">
-                                <span class="interest-icon">🎮</span>
-                                <h4>Jeux vidéo</h4>
-                                <p>Passionné par les jeux vidéo et leur développement.</p>
-                            </div>
-                            <div class="interest-item">
-                                <span class="interest-icon">🌍</span>
-                                <h4>Open Source</h4>
-                                <p>Contribution à des projets open source et communauté de développeurs.</p>
-                            </div>
+                <div class="tab-content" id="interets">
+                    <h3>Ce qui me passionne</h3>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <span class="interest-icon">�</span>
+                            <h4>Développement personnel</h4>
+                            <p>Réalisation de projets informatiques personnels pour approfondir mes compétences techniques.</p>
+                        </div>
+                        <div class="interest-item">
+                            <span class="interest-icon">⚡</span>
+                            <h4>Électronique & Bricolage</h4>
+                            <p>Expérimentation avec Arduino, Raspberry Pi et projets DIY technologiques.</p>
+                        </div>
+                        <div class="interest-item">
+                            <span class="interest-icon">🎮</span>
+                            <h4>Jeux vidéo</h4>
+                            <p>Passionné par les jeux vidéo, leur mécanique et leur développement.</p>
+                        </div>
+                        <div class="interest-item">
+                            <span class="interest-icon">🌱</span>
+                            <h4>Technologies durables</h4>
+                            <p>Intérêt pour les solutions technologiques respectueuses de l'environnement.</p>
+                        </div>
+                        <div class="interest-item">
+                            <span class="interest-icon">🏃‍♂️</span>
+                            <h4>Sports & Activités</h4>
+                            <p>Pratique régulière d'activités sportives pour l'équilibre et la forme physique.</p>
+                        </div>
+                        <div class="interest-item">
+                            <span class="interest-icon">🎵</span>
+                            <h4>Musique & Culture</h4>
+                            <p>Écoute et découverte de nouveaux artistes et genres musicaux, ainsi que des musiques que je connais déjà.</p>
                         </div>
                     </div>
                 </div>
@@ -161,7 +222,7 @@
         <p>&copy; 2026 Mathias TAUPIN. Tous droits réservés.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script src="js/about.js"></script>
 </body>
 </html>
