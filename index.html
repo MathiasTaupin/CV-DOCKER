@@ -16,7 +16,7 @@
                 <li><a onclick="scrollToSection('accueil')">Accueil</a></li>
                 <li><a href="about/index.html">À propos</a></li>
                 <li><a onclick="scrollToSection('portfolio')">Portfolio</a></li>
-                <li><a onclick="scrollToSection('contact')">Contact</a></li>
+                <li><a href="contact/index.html">Contact</a></li>
             </ul>
             <button class="toggle-menu" onclick="toggleMenu()">☰</button>
         </nav>
@@ -56,21 +56,21 @@
                     <div class="portfolio-image">🐍</div>
                     <div class="portfolio-info">
                         <h3>Faux Virus</h3>
-                        <p>Un projet de simulation de virus informatique pour démontrer les risques du téléchargement inconnu</p>
+                        <p>Un projet de simulation de virus informatique pour démontrer les risques de téléchargements inconnus</p>
                     </div>
                 </article>
-                <article class="portfolio-item">
-                    <div class="portfolio-image">🎬</div>
+                <article class="portfolio-item" onclick="window.location.href='projects/02-station-meteo/index.html'">
+                    <div class="portfolio-image">🌤️</div>
                     <div class="portfolio-info">
-                        <h3>Projet 2</h3>
-                        <p>Portfolio d'agence créative</p>
+                        <h3>Station Météo</h3>
+                        <p>Station météo développée avec Arduino et capteurs de thermistance</p>
                     </div>
                 </article>
-                <article class="portfolio-item">
-                    <div class="portfolio-image">🚀</div>
+                <article class="portfolio-item" onclick="window.location.href='projects/03-jeu-de-la-vie/index.html'">
+                    <div class="portfolio-image">🧬</div>
                     <div class="portfolio-info">
-                        <h3>Projet 3</h3>
-                        <p>Application web progressive</p>
+                        <h3>Jeu de la Vie (Python)</h3>
+                        <p>Simulation du Jeu de la Vie de Conway avec interface Tkinter</p>
                     </div>
                 </article>
             </div>
@@ -79,9 +79,9 @@
 
     <!-- Contact Section -->
     <section class="hero" id="contact" style="background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); margin-top: 3rem;">
-        <h2 style="font-size: 2.5rem;">Je vous est conquis ? <h2>
+        <h2 style="font-size: 2.5rem;">Vous êtes conquis ?</h2>
         <p>Contactez-moi dès aujourd'hui pour plus de précisions</p>
-        <button class="cta-button" onclick="alert('Contactez-moi : mathiastaupin.contact@gmail.com')">Me Contacter</button>
+        <button class="cta-button" onclick="window.location.href='contact/index.html'">Me Contacter</button>
     </section>
 
     <!-- Footer -->
